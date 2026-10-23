@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riyaad Real State | Guryo, Dhul & Gawaadhi — Somalia & Horn of Africa</title>
+<meta name="description" content="Riyaad Real State — buy and sell land, houses and vehicles, and rent houses, in Somalia and the Horn of Africa. Iibinta dhulka, guryaha iyo gawaadhida, iyo kiraynta guryaha.">
+<meta property="og:title" content="Riyaad Real State — Your Dream • Our Priority">
+<meta property="og:description" content="Land, houses, vehicles and rentals across Somalia and the Horn of Africa.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Riyaad Real State","slogan":"Your Dream • Our Priority","telephone":["+252636631602","+252659265684"],"email":"abdiqaniziyaad@gmail.com","areaServed":["Somalia","Horn of Africa"],"knowsLanguage":["so","en"]}</script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#faf8f3;--card:#fff;--tx:#1d2733;--mut:#5e6a78;--brand:#8a6508;--gold:#b8860b;--bd:#e4dfd3;--btn:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10171d;--card:#18222b;--tx:#eef1f4;--mut:#9aa7b5;--brand:#e0b04a;--gold:#e0b04a;--bd:#2b3945;--btn:#10171d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10171d;--card:#18222b;--tx:#eef1f4;--mut:#9aa7b5;--brand:#e0b04a;--gold:#e0b04a;--bd:#2b3945;--btn:#10171d;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 16px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:10}
+.logo{font-weight:800;font-size:1.15rem;color:var(--brand)}.logo span{color:var(--gold)}
+.lang button{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:6px 12px;cursor:pointer;font-weight:600}
+.lang button:first-child{border-radius:8px 0 0 8px}.lang button:last-child{border-radius:0 8px 8px 0}
+.lang button.on{background:var(--brand);color:var(--btn);border-color:var(--brand)}
+.hero{padding:48px 16px;text-align:center;background:linear-gradient(135deg,#0b0b0b,#2a2208);color:#fff}
+.hero h1{margin:0 0 8px;font-size:clamp(1.7rem,6vw,2.8rem)}.hero p{margin:0 auto 20px;max-width:560px;opacity:.92}
+.cta{display:inline-block;background:var(--gold);color:#fff;border:0;padding:12px 22px;border-radius:10px;font-weight:700;cursor:pointer;text-decoration:none;font-size:1rem}
+section{max-width:1000px;margin:0 auto;padding:32px 16px}
+h2{margin:0 0 16px;font-size:1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.card .ic{font-size:1.8rem}.card h3{margin:6px 0}.card p{margin:0;color:var(--mut);font-size:.95rem}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:12px}
+.tabs button{white-space:nowrap;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:20px;padding:7px 14px;cursor:pointer}
+.tabs button.on{background:var(--brand);color:var(--btn);border-color:var(--brand)}
+.price{color:var(--gold);font-weight:800;font-size:1.1rem}.tag{font-size:.8rem;color:var(--mut)}
+.note{font-size:.85rem;color:var(--mut);margin-top:10px}
+#fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--brand);color:var(--btn);border:0;border-radius:30px;padding:14px 18px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+#chat{position:fixed;right:12px;left:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));max-width:400px;margin-left:auto;height:min(70vh,520px);background:var(--card);border:1px solid var(--bd);border-radius:16px;display:none;flex-direction:column;z-index:20;box-shadow:0 8px 30px rgba(0,0,0,.3);overflow:hidden}
+#chat.open{display:flex}
+#chat .hd{background:var(--brand);color:var(--btn);padding:12px 14px;font-weight:700}
+#msgs{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:85%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;font-size:.95rem}
+.m.u{align-self:flex-end;background:var(--brand);color:var(--btn)}.m.b{align-self:flex-start;background:var(--bg);border:1px solid var(--bd)}
+#cf{display:flex;gap:6px;padding:10px;border-top:1px solid var(--bd)}
+#cf input{flex:1;min-width:0;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font-size:16px}
+#cf button{border:0;background:var(--gold);color:#fff;border-radius:10px;padding:0 14px;font-weight:700;cursor:pointer}
+.lgo{border-radius:50%;object-fit:cover;background:#000}
+.f label{display:block;font-weight:600;margin:10px 0 4px}.f input,.f select,.f textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit;font-size:16px}
+.chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:16px;padding:6px 10px;font-size:.85rem;cursor:pointer}
+footer{text-align:center;padding:24px 16px 90px;color:var(--mut);border-top:1px solid var(--bd)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" style="display:flex;align-items:center;gap:8px"><img class="lgo" alt="Riyaad Real State" style="width:38px;height:38px"><div>Riyaad <span>Real State</span></div></div>
+  <div style="display:flex;gap:8px;align-items:center"><button id="adm" class="cta" style="display:none;padding:6px 12px;font-size:.85rem">🔧 Admin</button><div class="lang"><button id="so" class="on">SO</button><button id="en">EN</button></div></div>
+</header>
+
+<div class="hero">
+  <img class="lgo" alt="Riyaad Real State" style="width:120px;height:120px;margin-bottom:10px">
+  <div style="color:#e0b04a;font-weight:700;letter-spacing:2px;margin-bottom:10px">YOUR DREAM • OUR PRIORITY</div>
+  <h1 data-i="h1"></h1>
+  <p data-i="h2"></p>
+  <a class="cta" href="#contact" data-i="cta"></a>
+</div>
+
+<section id="services">
+  <h2 data-i="sv"></h2>
+  <div class="grid" id="svg"></div>
+</section>
+
+<section id="about">
+  <h2 data-i="ab"></h2>
+  <div class="card" style="margin-bottom:14px"><p data-i="abp" style="color:var(--tx)"></p></div>
+  <div class="grid" id="prof"></div>
+</section>
+
+<section id="trust">
+  <h2 data-i="tr"></h2>
+  <div class="grid" id="trs"></div>
+  <p class="tag" id="trn" style="margin-top:10px"></p>
+</section>
+
+<section id="listings">
+  <h2 data-i="ls"></h2>
+  <div class="f" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px"><select id="fc"></select><select id="fx"></select></div>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="lg"></div>
+  <p class="note" data-i="demo"></p>
+</section>
+
+<section id="request">
+  <h2 data-i="fq"></h2>
+  <div class="card f">
+    <label data-i="ln"></label><input id="fn">
+    <label data-i="lp"></label><input id="fp" type="tel">
+    <label data-i="lsv"></label><select id="fs"></select>
+    <label data-i="lm"></label><textarea id="fm" rows="3"></textarea>
+    <p><a id="fsend" class="cta" target="_blank" rel="noopener" data-i="fsb"></a></p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 data-i="ct"></h2>
+  <div class="card">
+    <p>📞 WhatsApp: <a href="https://wa.me/252636631602" target="_blank" rel="noopener" style="color:var(--brand);font-weight:700">+252 636 631 602</a></p>
+    <p>📞 WhatsApp: <a href="https://wa.me/252659265684" target="_blank" rel="noopener" style="color:var(--brand);font-weight:700">+252 659 265 684</a></p>
+    <p>✉️ <a href="mailto:abdiqaniziyaad@gmail.com" style="color:var(--brand)">abdiqaniziyaad@gmail.com</a></p>
+    <p>✉️ <a href="mailto:ziyaadabdiqani@gmail.com" style="color:var(--brand)">ziyaadabdiqani@gmail.com</a></p>
+    <p>📍 Soomaaliya • Geeska Afrika / Somalia • Horn of Africa</p>
+  </div>
+</section>
+
+<section id="admin" style="display:none">
+  <h2>🔧 Admin — Ku dar hanti cusub / Add listing</h2>
+  <div class="card f">
+    <label>Nooca / Type</label><select id="ac"></select>
+    <label>Magaca (Soomaali)</label><input id="at1">
+    <label>Title (English)</label><input id="at2">
+    <label>Qiimaha / Price</label><input id="ap" placeholder="$50,000">
+    <label>Magaalada / City</label><select id="acity"></select>
+    <label>Xaafadda / Neighborhood</label><input id="ah" list="ahl"><datalist id="ahl"></datalist>
+    <label>Goobta dheeraadka ah / Extra location (optional)</label><input id="al">
+    <label>Faahfaahin / Description</label><textarea id="ad" rows="3"></textarea>
+    <label>Sawir / Photo</label><input id="af" type="file" accept="image/*">
+    <p><button class="cta" id="aadd">Kudar & daabac / Add &amp; publish</button></p>
+    <p class="note">Tirtirka: riix 🗑 ka dhig listing kasta. / To delete, tap 🗑 on a listing.</p>
+  </div>
+</section>
+<script type="application/json" id="data">[]</script>
+<footer>© 2026 Riyaad Real State</footer>
+
+<button id="fab"></button>
+<div id="chat">
+  <div class="hd" data-i="ai"></div>
+  <div id="msgs"></div>
+  <div id="chips" style="display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 8px"></div>
+  <form id="cf" onsubmit="return false"><input id="ci" autocomplete="off"><button id="cs">➤</button></form>
+</div>
+
+<script>
+var L = "so";
+var T = {
+  so:{h1:"Guri, dhul iyo gawaari — iibso, iibi ama kirayso",h2:"Riyaad Real State waxay ka shaqeysaa Soomaaliya iyo Geeska Afrika oo dhan.",cta:"Nala xiriir",sv:"Adeegyadayada",ls:"Dalabaadka hadda jira",ct:"Nala soo xiriir",ai:"🤖 Kaaliyaha Riyaad (AI)",ph:"Qor su’aashaada...",fab:"💬 Weydii AI",
+   demo:"Fiiro gaar ah: kuwani waa tusaale. Beddel xogta dhabta ah.",all:"Dhammaan",fq:"Dalab ama su’aal noo dir",ln:"Magacaaga",lp:"Lambarkaaga",lsv:"Adeegga aad rabto",lm:"Fariinta",fsb:"Ku dir WhatsApp",need:"Fadlan geli magac iyo lambar.",tr:"Kalsoonida iyo xaqiijinta",soon:"Dhawaan",ab:"Nagu saabsan — Profile-ka shirkadda",abp:"Riyaad Real State waa shirkad hanti guurta ah oo u adeegta Soomaaliya iyo Geeska Afrika oo dhan. Hadda waxaan bixinaa afar adeeg: iibinta dhulalka, iibinta guryaha, kiraynta guryaha iyo iibinta gawaadhida. Iibinta dahabka iyo maalgelinta waa la bilaabi doonaa si waafaqsan sharciga. Waxaan ku shaqeynaa af Soomaali iyo English, shiciarkayaguna waa: Your Dream • Our Priority.",allc:"Dhammaan magaalooyinka",allh:"Dhammaan xaafadaha",hello:"Salaan! Waxaan ahay kaaliyaha Riyaad Real State. Maxaan kaa caawin karaa?",err:"Waan ka xumahay, hadda ma shaqeynayo. Fadlan nala soo xiriir WhatsApp.",
+   sys:"Waxaad tahay kaaliyaha AI ee Riyaad Real State, shirkad ka shaqeysa Soomaaliya iyo Geeska Afrika. Waxay bixisaa 6 adeeg: iibinta guryaha, kiraynta guryaha, iibinta dhulka, iibinta gawaadhida, macluumaadka iyo iibinta dahabka, iyo maalgelinta. Ku jawaab luqadda macmiilku qorayo (Soomaali ama English), si kooban oo anfacaysa. Ha ka been abuurin qiimayaal ama guryo gaar ah; haddii macmiilku rabo faahfaahin dhab ah ama qiimo, u sheeg inuu nala xiriiro WhatsApp. Dahabka iyo maalgelinta ha ku dhiiri galin go’aan degdeg ah; sheeg in la hubiyo khatarta."},
+  en:{h1:"Homes, land and vehicles — buy, sell or rent",h2:"Riyaad Real State serves all of Somalia and the Horn of Africa.",cta:"Contact us",sv:"Our services",ls:"Current listings",ct:"Get in touch",ai:"🤖 Riyaad Assistant (AI)",ph:"Type your question...",fab:"💬 Ask AI",
+   demo:"Note: these are samples. Replace them with your real data.",all:"All",fq:"Send us a request",ln:"Your name",lp:"Your phone",lsv:"Service",lm:"Message",fsb:"Send via WhatsApp",need:"Please enter your name and phone.",tr:"Trust & verification",soon:"Coming soon",ab:"About us — Company profile",abp:"Riyaad Real State is a real estate company serving all of Somalia and the Horn of Africa. We currently offer four services: land sales, house sales, house rentals and vehicle sales. Gold sales and investment will launch later, in line with the law. We work in Somali and English, and our motto is: Your Dream • Our Priority.",allc:"All cities",allh:"All neighborhoods",hello:"Hello! I’m the Riyaad Real State assistant. How can I help you?",err:"Sorry, I’m unavailable right now. Please contact us on WhatsApp.",
+   sys:""}
+};
+var SV = [
+ {k:"buy",ic:"🏠",so:["Kala iibinta guryaha","Guryo iibsasho ama iib ah, meel kasta oo aad rabto."],en:["House sales","Buy or sell homes wherever you need."]},
+ {k:"rent",ic:"🔑",so:["Kiraynta guryaha","Guryo, guryo-fadhi iyo dukaamo kiro ah."],en:["House rentals","Houses, apartments and shops for rent."]},
+ {k:"land",ic:"🌍",so:["Iibinta dhulalka","Dhul la ansixiyay oo cinwaan cad leh."],en:["Land sales","Verified land with clear titles."]},
+ {k:"cars",ic:"🚗",so:["Kala iibinta gawaadhida","Gawaadhi cusub iyo kuwa la isticmaalay."],en:["Vehicle sales","New and used vehicles."]},
+ {k:"gold",ic:"🪙",soon:1,so:["Iibinta dahabka","Waa la bilaabi doonaa si waafaqsan sharciga."],en:["Gold sales","Launching later, in line with the law."]},
+ {k:"invest",ic:"📈",soon:1,so:["Maalgelin","Waa la bilaabi doonaa si waafaqsan sharciga."],en:["Investment","Launching later, in line with the law."]}
+];
+var LS0 = [
+ {k:"buy",ic:"🏠",so:"Villa casri ah, Muqdisho",en:"Modern villa, Mogadishu",p:"$185,000"},
+ {k:"rent",ic:"🔑",so:"Guri 3 qol, Hargeysa",en:"3-bedroom house, Hargeisa",p:"$450 / bil • month"},
+ {k:"land",ic:"🌍",so:"Dhul 400m², Garoowe",en:"400m² plot, Garowe",p:"$32,000"},
+ {k:"cars",ic:"🚗",so:"Toyota Land Cruiser 2018",en:"Toyota Land Cruiser 2018",p:"$28,500"},
+ {k:"gold",ic:"🪙",so:"Dahab 24K — la hubiyay",en:"24K gold — certified",p:"Nala weydii • Ask us"},
+ {k:"invest",ic:"📈",so:"Mashruuc dukaamo, Boosaaso",en:"Shopping unit project, Bosaso",p:"$75,000+"}
+];
+var LOGO="data:image/jpeg;base64,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";
+var CITIES=[
+{n:"Muqdisho",e:"Mogadishu",h:["Hodan","Wadajir","Warta Nabadda","Xamar Weyne","Xamar Jajab","Shibis","Boondheere","Waaberi","Yaaqshiid","Kaaraan","Wardhiigleey","Dharkenley","Heliwaa","Dayniile","Cabdicasiis","Shangaani","Kaxda"]},
+{n:"Hargeysa",e:"Hargeisa",h:["Jigjiga Yar","Ahmed Dhagax","26 June","Gacan Libaax","Ibraahim Koodbuur","Macalin Haaruun","Maxamed Mooge","Daami","Ga’an Libah"]},
+{n:"Boosaaso",e:"Bosaso",h:[]},{n:"Jigjiga",e:"Jigjiga",h:[]},{n:"Berbera",e:"Berbera",h:[]},{n:"Garoowe",e:"Garowe",h:[]},
+{n:"Kismaayo",e:"Kismayo",h:["Calanley","Farjano","Fanoole","Shaqaalaha","Buulo Gaduud"]},
+{n:"Gaalkacyo",e:"Galkayo",h:["Gaalkacyo Waqooyi","Gaalkacyo Koonfur"]},
+{n:"Baydhabo",e:"Baidoa",h:[]},{n:"Burco",e:"Burao",h:["Oktoobar"]},{n:"Boorama",e:"Borama",h:["Sh. Cali Jawhar","Xaafadda Madaxtooyada","Qar Xabashi","Sariimada","Xalane","Fardaha","Qoorgaab","Sheed Dheer","Xaasleyda","Badda Cas","Buurta Kaydka"]},{n:"Laascaanood",e:"Las Anod",h:[]},{n:"Beledweyne",e:"Beledweyne",h:[]},{n:"Marka",e:"Merca",h:[]},{n:"Afgooye",e:"Afgooye",h:[]},{n:"Ceerigaabo",e:"Erigavo",h:[]},{n:"Gabiley",e:"Gabiley",h:[]},
+{n:"Dire Dawa",e:"Dire Dawa",h:["Sabiyan","Megala","Kezira","Gende Kore"]},
+{n:"Jabuuti",e:"Djibouti",h:["Quartier 1","Quartier 2","Quartier 3","Quartier 4","Quartier 5","Quartier 6","Quartier 7","Balbala","Ambouli","Boulaos","Haramous","Gabode","Arhiba","PK12","Ras Dika","Plateau du Serpent","Warabaley","Hayabley"]}];
+var PD={
+buy:{so:"Waxaan kaa caawinaynaa inaad iibsato ama iibiso guri: ka raadinta guriga kuu qalma, hubinta macluumaadka, ilaa gaarsiinta heshiiska.",en:"We help you buy or sell a home: finding the right property, checking the details, through to closing the deal."},
+rent:{so:"Waxaan isku xirnaa kiriyaha iyo kiraystaha — guryo, guryo-fadhi iyo dukaamo — si fudud oo hufan.",en:"We connect landlords and tenants — houses, apartments and shops — simply and transparently."},
+land:{so:"Dhul magaalo kasta iyo xaafad kasta; waxaan kuu fududaynaa raadinta iyo hubinta waraaqaha dhulka ka hor intaadan lacag bixin.",en:"Plots in every city and neighborhood; we help you search and check the land documents before you pay."},
+cars:{so:"Gawaadhi cusub iyo kuwa la isticmaalay oo la kala iibiyo — nala soo xiriir si aad u aragto kuwa hadda jira.",en:"New and used vehicles bought and sold — contact us to see what is available now."},
+gold:{so:"Adeeggan waa la bilaabi doonaa si waafaqsan sharciga. Waan ku ogeysiin doonaa marka uu diyaar noqdo.",en:"This service will launch in line with the law. We will announce it when it is ready."},
+invest:{so:"Adeeggan waa la bilaabi doonaa si waafaqsan sharciga. Waan ku ogeysiin doonaa marka uu diyaar noqdo.",en:"This service will launch in line with the law. We will announce it when it is ready."}};
+var TR={
+so:{c:[
+{t:"Sida aan u shaqeyno",i:["Hantida kasta waxaan weydiinaa waraaqaha iyo cidda iska leh.","Waxaan kuu soo bandhigaa macluumaad iyo sawirro dhab ah.","Hantida waad arki kartaa adigu ama wakiil aad ku kalsoon tahay.","Heshiis kasta waa qoraal, marag lahna."]},
+{t:"Iibsiga dhulka iyo guryaha",i:["Hubi cidda iska leh iyo waraaqaha hantida xafiiska rasmiga ah ee degmada.","Si shaqsi ah u arag hantida, ama u diro qof aad ku kalsoon tahay.","Lacag buuxda ha bixin ka hor intaan waraaqaha la hubin.","Isticmaal heshiis qoran, qareen ama marag la aqoonsan yahay.","Ka digtoonow qiimo aad u hooseeya ama cadaadis degdeg ah."]},
+{t:"Kirada iyo gawaadhida",i:["Kirada: heshiis qoran oo sheegaya qiimaha, muddada iyo dammaanadda.","Gaari: hubi waraaqaha lahaanshaha, tijaabi oo baar ka hor intaadan iibsan.","Isticmaal habab lacag bixin oo la raadin karo, ha ku bixin lacag qarsoon."]}
+],n:"Macluumaadkani waa tilmaamo guud, ma aha talo sharci. Hubi sharciga goobtaada ama la tasho qareen. Haddii aad shaki qabto, nala soo xiriir WhatsApp."},
+en:{c:[
+{t:"How we work",i:["For every property we ask for the documents and the owner’s details.","We show you real information and photos.","You can see the property yourself or send someone you trust.","Every deal is in writing and witnessed."]},
+{t:"Buying land and houses",i:["Verify the owner and the property documents with the official local office.","Visit the property in person, or send someone you trust.","Do not pay in full before the documents are verified.","Use a written agreement, a lawyer, or an identified witness.","Be careful of prices that are too low or pressure to decide fast."]},
+{t:"Rentals and vehicles",i:["Rentals: a written agreement stating price, duration and deposit.","Vehicles: check ownership papers, test drive and inspect before buying.","Use traceable payment methods; avoid untraceable cash transfers."]}
+],n:"This is general guidance, not legal advice. Check the law where you are or consult a lawyer. If you have doubts, contact us on WhatsApp."}};
+var fcity="",fhood="";
+var SC=["Muqdisho","Hargeysa","Garoowe","Muqdisho","Muqdisho","Boosaaso"],SH=["Hodan","Jigjiga Yar","","","",""];
+LS0.forEach(function(x,i){x.c=SC[i];x.h=SH[i]});
+var LS; try{LS=JSON.parse(document.getElementById("data").textContent)}catch(e){LS=[]}
+var demo=!LS.length; if(demo)LS=LS0;
+var SYS = `
+IDENTITY:
+Waxaad tahay RIYAAD AI, kaaliyaha rasmiga ah ee RIYAAD REAL STATE.
+
+LANGUAGE:
+- Faham Af-Soomaali, qoraalka Soomaaliga ee gaaban, Somali-English iyo English.
+- Ku jawaab luqadda uu macmiilku isticmaalo.
+- Si edeb leh, cad oo waxtar leh ugu jawaab.
+
+SERVICES:
+Adeegyada hadda jira:
+1. Iibinta guryaha.
+2. Kiraynta guryaha.
+3. Iibinta dhulka.
+4. Iibinta gawaadhida.
+
+Dahabka iyo maalgelintu weli waa adeegyo la qorsheynayo.
+Ha sheegan inay diyaar yihiin.
+
+PROPERTY DATA:
+- Isticmaal oo keliya hantida ku jirta xogta dhabta ah ee hoose.
+- Ha samayn guryo, dhul, qiimayaal, sawirro ama goobo aan xogtooda la hayn.
+- Haddii macmiilku raadiyo hanti, eeg nooca, magaalada, xaafadda iyo miisaaniyadda.
+- Haddii aadan haysan hanti ku habboon, si daacad ah u sheeg.
+- Weydii hal su'aal markiiba haddii xog muhiim ahi maqan tahay.
+- Ha sheegin in hanti la xaqiijiyay haddii aan xogtu caddayn.
+
+GENERAL QUESTIONS:
+Waxaad ka jawaabi kartaa su'aalaha guud ee ku saabsan
+iibsiga guryaha, dhulka, heshiisyada kirada, gawaadhida,
+iyo sida looga taxaddaro khiyaanada.
+Haddii aadan hubin jawaabta, si cad u sheeg.
+Ha iska dhigin inaad hubisay xog dibadeed ama qiimayaal suuqa ah.
+
+SAFETY:
+- Ku tali in la hubiyo waraaqaha hantida iyo cidda leh.
+- Ku tali heshiis qoraal ah iyo baaritaan ka hor lacag-bixinta.
+- Ha ballanqaadin faa'iido maalgelin.
+- Su'aalaha sharciyeed ee gaarka ah, ku tali qareen aqoon leh.
+- Ha codsan furaha sirta ah ama xogta kaarka bangiga.
+
+CONTACT:
+WhatsApp: +252 636 631 602
+WhatsApp: +252 659 265 684
+Email: abdiqaniziyaad@gmail.com
+Email: ziyaadabdiqani@gmail.com
+
+RESPONSE STYLE:
+Jawaabta toos uga bilow su'aasha macmiilka.
+Jawaabtu ha noqoto mid cad oo si fudud telefoonka looga akhrisan karo.
+Ha ku celcelin salaanta fariin kasta.
+`;
+
+function buildSys() {
+  var listings = (demo ? [] : LS).slice(0, 30).map(function (x) {
+    return {
+      type: x.k || "",
+      titleSo: x.so || "",
+      titleEn: x.en || "",
+      city: x.c || "",
+      neighborhood: x.h || "",
+      extraLocation: x.loc || "",
+      price: x.p || "",
+      details: x.d || "",
+      photoAvailable: !!x.img
+    };
+  });
+
+  return SYS +
+    "\n\nXOGTA HANTIDA DHABTA AH:\n" +
+    (listings.length
+      ? JSON.stringify(listings)
+      : "Weli lama daabicin xog hanti oo dhab ah.");
+}
+var cat = "all";
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function render(){
+  document.documentElement.lang = L;
+  document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=T[L][e.dataset.i]});
+  document.getElementById("so").className = L==="so"?"on":"";
+  document.getElementById("en").className = L==="en"?"on":"";
+  document.getElementById("svg").innerHTML = SV.map(function(s){
+    return '<div class="card"><div class="ic">'+s.ic+'</div><h3>'+esc(s[L][0])+'</h3><p>'+esc(s[L][1])+'</p>'+(s.soon?'<p class="tag" style="color:var(--gold);font-weight:700;margin-top:6px">'+T[L].soon+'</p>':'')+'</div>'}).join("");
+  document.getElementById("tabs").innerHTML = '<button data-c="all" class="'+(cat==="all"?"on":"")+'">'+T[L].all+'</button>' +
+    SV.filter(function(s){return !s.soon}).map(function(s){return '<button data-c="'+s.k+'" class="'+(cat===s.k?"on":"")+'">'+s.ic+' '+esc(s[L][0])+'</button>'}).join("");
+  document.getElementById("lg").innerHTML = LS.filter(function(x){return (cat==="all"||x.k===cat)&&(!fcity||x.c===fcity)&&(!fhood||x.h===fhood)}).map(function(x){
+    return '<div class="card">'+(x.img?'<img src="'+x.img+'" alt="" style="width:100%;height:170px;object-fit:cover;border-radius:10px;margin-bottom:8px">':'<div class="ic">'+(x.ic||icon(x.k))+'</div>')+'<h3>'+esc(x[L])+'</h3>'+(locStr(x)?'<div class="tag">📍 '+esc(locStr(x))+'</div>':'')+'<div class="price">'+esc(x.p)+'</div>'+(x.d?'<p>'+esc(x.d)+'</p>':'')+'<p style="margin-top:10px"><a class="cta" style="padding:7px 14px;font-size:.9rem" target="_blank" rel="noopener" href="https://wa.me/252636631602?text='+encodeURIComponent(x[L]+' - '+x.p)+'">WhatsApp</a>'+((isAdmin&&!demo)?' <button data-del="'+esc(x.id||'')+'" style="border:1px solid var(--bd);background:var(--card);border-radius:8px;padding:6px 10px;cursor:pointer">🗑</button>':'')+'</p></div>'}).join("");
+  document.getElementById("fab").textContent = T[L].fab;
+  document.getElementById("ci").placeholder = T[L].ph;
+  var opts=SV.filter(function(s){return !s.soon}).map(function(s){return '<option value="'+s.k+'">'+s.ic+' '+esc(s[L][0])+'</option>'}).join("");
+  ["fs","ac"].forEach(function(i){var e=document.getElementById(i),v=e.value;e.innerHTML=opts;if(v)e.value=v});
+  document.querySelector(".note").style.display=demo?"":"none";
+  var cs=document.getElementById("fc");
+  cs.innerHTML='<option value="">'+T[L].allc+'</option>'+CITIES.map(function(c){return '<option value="'+c.n+'"'+(fcity===c.n?' selected':'')+'>'+esc(L==="so"?c.n:c.e)+'</option>'}).join("");
+  var hx=document.getElementById("fx");
+  hx.innerHTML='<option value="">'+T[L].allh+'</option>'+hoods(fcity).map(function(h){return '<option value="'+esc(h)+'"'+(fhood===h?' selected':'')+'>'+esc(h)+'</option>'}).join("");
+  hx.disabled=!fcity;
+  var tr=TR[L];document.getElementById("trs").innerHTML=tr.c.map(function(c){return '<div class="card"><h3>'+esc(c.t)+'</h3><ul style="padding-left:18px;margin:8px 0 0;color:var(--mut);font-size:.95rem">'+c.i.map(function(x){return '<li style="margin-bottom:6px">'+esc(x)+'</li>'}).join("")+'</ul></div>'}).join("");document.getElementById("trn").textContent=tr.n;
+  document.getElementById("prof").innerHTML=SV.map(function(s){return '<div class="card"><div class="ic">'+s.ic+'</div><h3>'+esc(s[L][0])+'</h3><p>'+esc(PD[s.k][L])+'</p>'+(s.soon?'<p class="tag" style="color:var(--gold);font-weight:700;margin-top:6px">'+T[L].soon+'</p>':'')+'</div>'}).join("");
+  document.querySelectorAll(".lgo").forEach(function(i){i.src=LOGO});
+  var a2=document.getElementById("acity"),v2=a2.value;
+  a2.innerHTML=CITIES.map(function(c){return '<option value="'+c.n+'">'+esc(L==="so"?c.n:c.e)+'</option>'}).join("");
+  if(v2)a2.value=v2;fillAH();
+}
+document.getElementById("so").onclick=function(){L="so";render();resetChat()};
+document.getElementById("en").onclick=function(){L="en";render();resetChat()};
+document.getElementById("tabs").onclick=function(e){var c=e.target.closest("button");if(c){cat=c.dataset.c;render()}};
+
+var msgs=document.getElementById("msgs"), hist=[], sample=null, busy=false;
+function add(t,w){if(w==="u"){var cc=document.getElementById("chips");if(cc)cc.innerHTML=""}var d=document.createElement("div");d.className="m "+w;d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
+function resetChat(){msgs.innerHTML="";hist=[];add(T[L].hello,"b");showChips()}
+document.getElementById("fab").onclick=function(){
+  var c=document.getElementById("chat");c.classList.toggle("open");
+  if(!msgs.children.length)resetChat();
+};
+async function send(){
+  var i=document.getElementById("ci"), q=i.value.trim();
+  if(!q||busy)return; i.value=""; add(q,"u"); busy=true;
+  var out=add("…","b");
+  try{
+    if(!sample&&window.claude&&claude.use)sample=await claude.use("sample");
+    if(!sample)throw new Error("na");
+    hist.push({role:"user",content:q});
+    var sys=buildSys();
+    var input=[{role:"user",content:"INSTRUCTIONS:\n"+sys+"\n\nCONVERSATION:\n"+hist.slice(-12).map(function(m){return m.role+": "+m.content}).join("\n")+"\n\nWrite only the assistant’s next reply."}];
+    var r=await sample(input,{cache:false,modelTier:"default",onText:function(o){out.textContent=o.text}});
+    out.textContent=r.text; hist.push({role:"assistant",content:r.text});
+  }catch(e){out.textContent=T[L].err}
+  busy=false; msgs.scrollTop=msgs.scrollHeight;
+}
+document.getElementById("cs").onclick=send;
+document.getElementById("ci").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();send()}};
+var CH={so:["Dhul ma heli karaa?","Sidee u hubiyaa waraaqaha dhulka?","Guri kiro ah ayaan raadinayaa","Gawaadhi ma haysaan?"],en:["Can you find me land?","How do I verify land documents?","I\u2019m looking for a house to rent","Do you have vehicles?"]};
+function showChips(){var c=document.getElementById("chips");c.innerHTML=CH[L].map(function(x){return '<button class="chip" type="button">'+esc(x)+'</button>'}).join("")}
+document.getElementById("chips").onclick=function(e){var b=e.target.closest(".chip");if(b){document.getElementById("ci").value=b.textContent;send()}};
+function icon(k){var s=SV.filter(function(z){return z.k===k})[0];return s?s.ic:"🏠"}
+var isAdmin=false, art=null;
+async function savePublish(){
+ var c=document.documentElement.cloneNode(true);
+ ["svg","tabs","lg","msgs","fs","ac","prof","trs","trn","chips"].forEach(function(i){var e=c.querySelector("#"+i);if(e)e.innerHTML=""});
+ c.querySelector("#chat").className="";
+ c.querySelectorAll(".lgo").forEach(function(i){i.removeAttribute("src")});
+ c.querySelector("#data").textContent=JSON.stringify(LS).replace(/</g,"\\u003c");
+ c.querySelector("#adm").style.display="none";
+ c.querySelector("#admin").style.display="none";
+ c.setAttribute("lang","so");
+ await art.publish("<!DOCTYPE html>\n"+c.outerHTML);
+}
+function readImg(f){return new Promise(function(res){if(!f)return res("");var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,700/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*s;c.height=im.height*s;c.getContext("2d").drawImage(im,0,0,c.width,c.height);res(c.toDataURL("image/jpeg",.72))};im.onerror=function(){res("")};im.src=r.result};r.readAsDataURL(f)})}
+document.getElementById("aadd").onclick=async function(){
+ var g=function(i){return document.getElementById(i).value.trim()};
+ var so=g("at1"),en=g("at2");
+ if((!so&&!en)||!g("ap")){alert("Fadlan geli magac iyo qiimo / Enter title and price");return}
+ var btn=this;btn.disabled=true;
+ var img=await readImg(document.getElementById("af").files[0]);
+ var base=demo?[]:LS;
+ base.unshift({id:Date.now()+"",k:g("ac"),c:g("acity"),h:g("ah"),so:so||en,en:en||so,p:g("ap"),loc:g("al"),d:g("ad"),img:img});
+ LS=base;demo=false;
+ try{await savePublish()}catch(e){alert("Error: "+(e.message||e));btn.disabled=false}
+};
+document.getElementById("lg").onclick=async function(e){
+ var b=e.target.closest("[data-del]");if(!b||!isAdmin||!confirm("Tirtir? / Delete?"))return;
+ LS=LS.filter(function(x){return x.id!==b.dataset.del});
+ try{await savePublish()}catch(er){alert("Error: "+(er.message||er))}
+};
+document.getElementById("adm").onclick=function(){var a=document.getElementById("admin");a.style.display=a.style.display==="none"?"":"none";a.scrollIntoView()};
+document.getElementById("fsend").onclick=function(e){
+ var g=function(i){return document.getElementById(i).value.trim()};
+ if(!g("fn")||!g("fp")){e.preventDefault();alert(T[L].need);return}
+ var sv=document.getElementById("fs");
+ var t=(L==="so"?"Salaan Riyaad Real State,":"Hello Riyaad Real State,")+"\n"+g("fn")+"\n"+g("fp")+"\n"+sv.options[sv.selectedIndex].text+(fcity?"\n"+fcity+(fhood?" - "+fhood:""):"")+"\n"+g("fm");
+ this.href="https://wa.me/252636631602?text="+encodeURIComponent(t);
+};
+function hoods(c){var r=[];if(!c)return r;CITIES.forEach(function(z){if(z.n===c)r=z.h.slice()});LS.forEach(function(x){if(x.c===c&&x.h&&r.indexOf(x.h)<0)r.push(x.h)});return r}
+function locStr(x){var cn="";CITIES.forEach(function(z){if(z.n===x.c)cn=L==="so"?z.n:z.e});return [x.h,cn,x.loc].filter(Boolean).join(" • ")}
+function fillAH(){var c=document.getElementById("acity").value;document.getElementById("ahl").innerHTML=hoods(c).map(function(h){return '<option value="'+esc(h)+'">'}).join("")}
+document.getElementById("acity").onchange=fillAH;
+document.getElementById("fc").onchange=function(){fcity=this.value;fhood="";render()};
+document.getElementById("fx").onchange=function(){fhood=this.value;render()};
+(async function(){try{if(window.claude){var u=await claude.use("user");if(u&&u.isOwner()){art=await claude.use("artifact");if(art){isAdmin=true;document.getElementById("adm").style.display=""}}}}catch(e){}render()})();
+render();
+</script>
+</body>
+</html>
